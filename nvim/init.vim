@@ -29,9 +29,11 @@ call plug#end()
 set t_Co=257
 
 set termguicolors
-colorscheme srcery 
+colorscheme srcery
 set background=dark
 syntax enable
+
+let g:NERDTreeWinSize=18
 
 "Nerd tree"
 nnoremap <C-n> :NERDTree<CR>
@@ -48,7 +50,3 @@ nnoremap ,g <cmd>Telescope live_grep<cr>
 lua << EOF
 require('telescope').load_extension('fzf')
 EOF
-
-" lsp server"
-
-
